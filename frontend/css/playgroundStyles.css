@@ -1,0 +1,85 @@
+body {
+    padding-top: 70px;
+}
+
+.playground{
+    background-color: #333333;
+    width:100%;
+    min-height: 300px;
+
+}
+
+
+.wrapper{
+    background-color: #555555;
+    margin: 0 auto;
+    padding:20px;
+    display:table;
+}
+.column-scroller{
+    height: 300px;
+    overflow-y: auto;
+}
+.column {
+    display: table-cell;
+    border-style: double;
+    width: 400px;
+    background-color: #AC5C7E;
+}
+
+.column:nth-child(odd){
+    background-color: #0b97c4;
+
+}
+
+.elem {
+    background-color: #3a3a3a;
+    margin:2px;
+    width:120px;
+    height:150px;
+}
+
+.elem>.title {
+    padding: 2px;
+    background-color: #929292;
+}
+
+.elem.container-elem{
+    background-color:rgba(0,0,0,.2);
+}
+
+#container-from > .elem{
+    display:inline-block;
+}
+
+#container-to > .elem{
+    margin: 10px auto;
+}
+
+.nested {
+    padding: 7px 0;
+    border: 1px dotted #bbb;
+}
+
+.gu-mirror {
+    position: fixed !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+}
+.gu-hide {
+    display: none !important;
+}
+.gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+.gu-transit {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+}
